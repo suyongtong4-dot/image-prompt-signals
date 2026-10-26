@@ -1,0 +1,30 @@
+{
+  "name": "image-prompt-signals",
+  "version": "1.0.0",
+  "description": "Twelve pixel measurements, their cut-offs, and a dependency-free module that turns an image into a prompt line for Midjourney, Stable Diffusion, Flux or DALL-E.",
+  "type": "module",
+  "main": "src/signals.mjs",
+  "exports": {
+    ".": "./src/signals.mjs",
+    "./signals.json": "./data/signals.json"
+  },
+  "files": [
+    "src/",
+    "data/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/signals.test.mjs",
+    "test:parity": "node test/parity.test.mjs"
+  },
+  "keywords": [
+    "image-to-prompt",
+    "prompt-engineering",
+    "midjourney",
+    "stable-diffusion",
+    "flux",
+    "image-analysis"
+  ],
+  "license": "MIT"
+}

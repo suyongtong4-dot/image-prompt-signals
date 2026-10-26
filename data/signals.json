@@ -1,0 +1,168 @@
+{
+  "generated_from": "https://visualtoprompt.com/script.js",
+  "grid": "192x192",
+  "note": "Cut-offs are the constants the shipped script compares each measured number against. Changing one moves where the wording flips.",
+  "signals": [
+    {
+      "id": "framing",
+      "fields": [
+        "ar"
+      ],
+      "cutoffs": "framing",
+      "measured": true
+    },
+    {
+      "id": "exposure",
+      "fields": [
+        "meanL"
+      ],
+      "cutoffs": "exposure",
+      "measured": true
+    },
+    {
+      "id": "contrast",
+      "fields": [
+        "stdL"
+      ],
+      "cutoffs": "contrast",
+      "measured": true
+    },
+    {
+      "id": "saturation",
+      "fields": [
+        "meanSat"
+      ],
+      "cutoffs": "saturation",
+      "measured": true
+    },
+    {
+      "id": "monochrome-share",
+      "fields": [
+        "monoRatio"
+      ],
+      "cutoffs": "saturation",
+      "measured": true
+    },
+    {
+      "id": "colour-temperature",
+      "fields": [
+        "meanR",
+        "meanB"
+      ],
+      "cutoffs": "temperature",
+      "measured": true
+    },
+    {
+      "id": "detail-density",
+      "fields": [
+        "edge"
+      ],
+      "cutoffs": "detail",
+      "measured": true
+    },
+    {
+      "id": "lighting-distribution",
+      "fields": [
+        "centreL",
+        "borderL"
+      ],
+      "cutoffs": "lightingDistribution",
+      "measured": true
+    },
+    {
+      "id": "vertical-lighting",
+      "fields": [
+        "topL",
+        "bottomL"
+      ],
+      "cutoffs": "verticalLighting",
+      "measured": true
+    },
+    {
+      "id": "dominant-palette",
+      "fields": [
+        "palette"
+      ],
+      "cutoffs": "palette",
+      "measured": true
+    },
+    {
+      "id": "green-blue-dominance",
+      "fields": [
+        "greenRatio",
+        "blueRatio"
+      ],
+      "cutoffs": "dominance",
+      "measured": false
+    },
+    {
+      "id": "mood",
+      "fields": [
+        "meanL",
+        "stdL",
+        "meanR",
+        "meanB"
+      ],
+      "cutoffs": "mood",
+      "measured": true
+    }
+  ],
+  "cutoffs": {
+    "framing": {
+      "ultraWide": 2.2,
+      "widescreen": 1.7,
+      "landscape": 1.4,
+      "nearSquare": 1.15,
+      "square": 0.9,
+      "portrait34": 0.7,
+      "portrait23": 0.55
+    },
+    "exposure": {
+      "bright": 175,
+      "wellLit": 130,
+      "moderate": 80
+    },
+    "contrast": {
+      "high": 68,
+      "medium": 38
+    },
+    "saturation": {
+      "monochromeRatio": 0.85,
+      "vivid": 0.45,
+      "moderate": 0.22
+    },
+    "temperature": {
+      "warmStrong": 14,
+      "warmSlight": 5,
+      "coolStrong": -14,
+      "coolSlight": -5
+    },
+    "detail": {
+      "high": 15,
+      "moderate": 7
+    },
+    "lightingDistribution": {
+      "ratio": 1.18
+    },
+    "verticalLighting": {
+      "ratio": 1.2
+    },
+    "palette": {
+      "bucketBits": 4,
+      "mergeDistance": 52,
+      "named": 5,
+      "inPrompt": 4
+    },
+    "dominance": {
+      "green": 0.45,
+      "blue": 0.45
+    },
+    "mood": {
+      "brightMeanL": 150,
+      "brightWarmth": 5,
+      "darkMeanL": 95,
+      "dramaticStdL": 68,
+      "coolWarmth": -5
+    }
+  }
+}
